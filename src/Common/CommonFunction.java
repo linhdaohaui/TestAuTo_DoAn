@@ -24,7 +24,7 @@ public class CommonFunction {
 		options.addArguments("--lang=vi");
 		driver = new ChromeDriver(options);// khởi tạo browser cho biến driver
 		driver.manage().window().maximize(); // Để tối đa hóa cửa sổ hiện tại của trình duyệt
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);// đặt thời gian ngầm định
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);// đặt thời gian ngầm định
 		driver.get(url);// mở url
 		return driver;
 	}

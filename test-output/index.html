@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-348223915\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-151862765\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCase.Search" class="method navigator-link" hash-for-method="TEST_01">TEST_01</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="TestCase.Search" class="method navigator-link" hash-for-method="TEST_05">TEST_05</a> <!-- method navigator-link -->
@@ -120,6 +115,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestCase.Search" class="method navigator-link" hash-for-method="TEST_01">TEST_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="TestCase.Search" class="method navigator-link" hash-for-method="TEST_02">TEST_02</a> <!-- method navigator-link -->
@@ -155,74 +155,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TEST_01">
-                  </a> <!-- TEST_01 -->
-                  <span class="method-name">TEST_01</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter some search keyword}
-  (Session info: chrome=134.0.6998.178): Please enter some search keyword
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c53624f6d51e1bcd22d10727ea499432
-*** Element info: {Using=xpath, value=//div[@class=&apos;product-item&apos;]//a}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at Common.CommonFunction.getXpathCount(CommonFunction.java:70)
-	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:21)
-	at TestCase.Search.TEST_01(Search.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TEST_05">
                   </a> <!-- TEST_05 -->
                   <span class="method-name">TEST_05</span>
-                  <div class="stack-trace">java.lang.AssertionError: did not expect [0] but found [0]
+                  <div class="stack-trace">java.lang.AssertionError: Alert không xuất hiện khi tìm kiếm trống.
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failEquals(Assert.java:1594)
-	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
-	at org.testng.Assert.assertNotEquals(Assert.java:2217)
-	at org.testng.Assert.assertNotEquals(Assert.java:2239)
-	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:24)
-	at TestCase.Search.TEST_05(Search.java:58)
+	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:40)
+	at TestCase.Search.TEST_05(Search.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -265,6 +204,13 @@ Session ID: c53624f6d51e1bcd22d10727ea499432
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="TEST_01">
+                  </a> <!-- TEST_01 -->
+                  <span class="method-name">TEST_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="TEST_02">
                   </a> <!-- TEST_02 -->
                   <span class="method-name">TEST_02</span>
@@ -289,7 +235,7 @@ Session ID: c53624f6d51e1bcd22d10727ea499432
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-348223915\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-151862765\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -340,30 +286,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TEST_05')
+data.setCell(0, 1, 'TEST_03')
 data.setCell(0, 2, 'TestCase.Search')
-data.setCell(0, 3, 32630);
+data.setCell(0, 3, 12370);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TEST_03')
+data.setCell(1, 1, 'TEST_02')
 data.setCell(1, 2, 'TestCase.Search')
-data.setCell(1, 3, 32527);
+data.setCell(1, 3, 3705);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TEST_02')
+data.setCell(2, 1, 'TEST_04')
 data.setCell(2, 2, 'TestCase.Search')
-data.setCell(2, 3, 3026);
+data.setCell(2, 3, 3240);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TEST_04')
+data.setCell(3, 1, 'TEST_05')
 data.setCell(3, 2, 'TestCase.Search')
-data.setCell(3, 3, 2599);
+data.setCell(3, 3, 3119);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TEST_01')
 data.setCell(4, 2, 'TestCase.Search')
-data.setCell(4, 3, 1215);
+data.setCell(4, 3, 1644);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -396,51 +342,49 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8546 ms</span>
+                <span class="method-start">7914 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TEST_01</span>
-                <span class="method-start">9672 ms</span>
+                <span class="method-start">9314 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10897 ms</span>
+                <span class="method-start">10969 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TEST_02</span>
-                <span class="method-start">11978 ms</span>
+                <span class="method-start">12120 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15006 ms</span>
+                <span class="method-start">15836 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TEST_03</span>
-                <span class="method-start">16117 ms</span>
+                <span class="method-start">17062 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">48648 ms</span>
+                <span class="method-start">29440 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TEST_04</span>
-                <span class="method-start">49719 ms</span>
+                <span class="method-start">30676 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">52321 ms</span>
+                <span class="method-start">33924 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TEST_05</span>
-                <span class="method-start">53396 ms</span>
+                <span class="method-start">35124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownForClass</span>
-                <span class="method-start">86030 ms</span>
+                <span class="method-start">38260 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 08 22:37:47 GMT+07:00 2025</td>
+<td>Started on:</td><td>Sun Apr 13 21:31:16 GMT+07:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>89 seconds (89077 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47828 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,8 +78,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='TestCase.Search.TEST_05()'><b>TEST_05</b><br>Test class: TestCase.Search</td>
 <td><div><pre>java.lang.AssertionError: did not expect [0] but found [0]
-	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:24)
-	at TestCase.Search.TEST_05(Search.java:58)
+	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:28)
+	at TestCase.Search.TEST_05(Search.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace458817438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace458817438'><pre>java.lang.AssertionError: did not expect [0] but found [0]
@@ -88,8 +88,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
 	at org.testng.Assert.assertNotEquals(Assert.java:2217)
 	at org.testng.Assert.assertNotEquals(Assert.java:2239)
-	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:24)
-	at TestCase.Search.TEST_05(Search.java:58)
+	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:28)
+	at TestCase.Search.TEST_05(Search.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,17 +119,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>32</td>
+<td>12</td>
 <td>TestCase.Search@5c33f1a9</td></tr>
 <tr>
 <td title='TestCase.Search.TEST_01()'><b>TEST_01</b><br>Test class: TestCase.Search</td>
 <td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter some search keyword}
-  (Session info: chrome=134.0.6998.178): Please enter some search keyword
+  (Session info: chrome=135.0.7049.85): Please enter some search keyword
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8130405812eb202d94f8ac9414291671
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63093}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efec47168191b24a6fdf639d9aa11c7e
 *** Element info: {Using=xpath, value=//div[@class=&apos;product-item&apos;]//a}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -141,17 +141,17 @@ Session ID: 8130405812eb202d94f8ac9414291671
 	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
 	at Common.CommonFunction.getXpathCount(CommonFunction.java:70)
-	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:21)
-	at TestCase.Search.TEST_01(Search.java:38)
+	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:20)
+	at TestCase.Search.TEST_01(Search.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace593447952", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace593447952'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter some search keyword}
-  (Session info: chrome=134.0.6998.178): Please enter some search keyword
+  (Session info: chrome=135.0.7049.85): Please enter some search keyword
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8130405812eb202d94f8ac9414291671
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63093}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efec47168191b24a6fdf639d9aa11c7e
 *** Element info: {Using=xpath, value=//div[@class=&apos;product-item&apos;]//a}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -163,8 +163,8 @@ Session ID: 8130405812eb202d94f8ac9414291671
 	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
 	at Common.CommonFunction.getXpathCount(CommonFunction.java:70)
-	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:21)
-	at TestCase.Search.TEST_01(Search.java:38)
+	at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:20)
+	at TestCase.Search.TEST_01(Search.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -218,7 +218,7 @@ Session ID: 8130405812eb202d94f8ac9414291671
 <tr>
 <td title='TestCase.Search.TEST_03()'><b>TEST_03</b><br>Test class: TestCase.Search</td>
 <td></td>
-<td>32</td>
+<td>12</td>
 <td>TestCase.Search@5c33f1a9</td></tr>
 </table><p>
 </body>

@@ -1,129 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-08T22:41:26 GMT+07:00" name="Default suite" finished-at="2025-04-08T22:42:55 GMT+07:00" duration-ms="89164">
+  <suite started-at="2025-04-13T21:41:08 GMT+07:00" name="Default suite" finished-at="2025-04-13T21:41:50 GMT+07:00" duration-ms="41571">
     <groups>
     </groups>
-    <test started-at="2025-04-08T22:41:26 GMT+07:00" name="Default test" finished-at="2025-04-08T22:42:55 GMT+07:00" duration-ms="89164">
+    <test started-at="2025-04-13T21:41:08 GMT+07:00" name="Default test" finished-at="2025-04-13T21:41:50 GMT+07:00" duration-ms="41571">
       <class name="TestCase.Search">
-        <test-method is-config="true" signature="setUpForClass()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:41:26 GMT+07:00" name="setUpForClass" finished-at="2025-04-08T22:41:35 GMT+07:00" duration-ms="8533" status="PASS">
+        <test-method is-config="true" signature="setUpForClass()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:08 GMT+07:00" name="setUpForClass" finished-at="2025-04-13T21:41:16 GMT+07:00" duration-ms="7879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpForClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:41:35 GMT+07:00" name="setUp" finished-at="2025-04-08T22:41:36 GMT+07:00" duration-ms="1123" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:16 GMT+07:00" name="setUp" finished-at="2025-04-13T21:41:17 GMT+07:00" duration-ms="1397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TEST_01()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:41:36 GMT+07:00" name="TEST_01" finished-at="2025-04-08T22:41:37 GMT+07:00" duration-ms="1215" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Please enter some search keyword}
-  (Session info: chrome=134.0.6998.178): Please enter some search keyword
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c53624f6d51e1bcd22d10727ea499432
-*** Element info: {Using=xpath, value=//div[@class='product-item']//a}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter some search keyword}
-  (Session info: chrome=134.0.6998.178): Please enter some search keyword
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c53624f6d51e1bcd22d10727ea499432
-*** Element info: {Using=xpath, value=//div[@class='product-item']//a}
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-at Common.CommonFunction.getXpathCount(CommonFunction.java:70)
-at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:21)
-at TestCase.Search.TEST_01(Search.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        <test-method signature="TEST_01()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:17 GMT+07:00" name="TEST_01" finished-at="2025-04-13T21:41:19 GMT+07:00" duration-ms="1644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TEST_01 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:41:37 GMT+07:00" name="setUp" finished-at="2025-04-08T22:41:38 GMT+07:00" duration-ms="1081" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:19 GMT+07:00" name="setUp" finished-at="2025-04-13T21:41:20 GMT+07:00" duration-ms="1151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TEST_02()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:41:38 GMT+07:00" name="TEST_02" finished-at="2025-04-08T22:41:41 GMT+07:00" duration-ms="3026" status="PASS">
+        <test-method signature="TEST_02()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:20 GMT+07:00" name="TEST_02" finished-at="2025-04-13T21:41:24 GMT+07:00" duration-ms="3705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TEST_02 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:41:41 GMT+07:00" name="setUp" finished-at="2025-04-08T22:41:42 GMT+07:00" duration-ms="1111" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:24 GMT+07:00" name="setUp" finished-at="2025-04-13T21:41:25 GMT+07:00" duration-ms="1226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TEST_03()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:41:42 GMT+07:00" name="TEST_03" finished-at="2025-04-08T22:42:15 GMT+07:00" duration-ms="32527" status="PASS">
+        <test-method signature="TEST_03()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:25 GMT+07:00" name="TEST_03" finished-at="2025-04-13T21:41:37 GMT+07:00" duration-ms="12370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TEST_03 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:42:15 GMT+07:00" name="setUp" finished-at="2025-04-08T22:42:16 GMT+07:00" duration-ms="1070" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:37 GMT+07:00" name="setUp" finished-at="2025-04-13T21:41:39 GMT+07:00" duration-ms="1236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TEST_04()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:42:16 GMT+07:00" name="TEST_04" finished-at="2025-04-08T22:42:19 GMT+07:00" duration-ms="2599" status="PASS">
+        <test-method signature="TEST_04()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:39 GMT+07:00" name="TEST_04" finished-at="2025-04-13T21:41:42 GMT+07:00" duration-ms="3240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TEST_04 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:42:19 GMT+07:00" name="setUp" finished-at="2025-04-08T22:42:20 GMT+07:00" duration-ms="1074" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:42 GMT+07:00" name="setUp" finished-at="2025-04-13T21:41:43 GMT+07:00" duration-ms="1200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TEST_05()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:42:20 GMT+07:00" name="TEST_05" finished-at="2025-04-08T22:42:52 GMT+07:00" duration-ms="32630" status="FAIL">
+        <test-method signature="TEST_05()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:43 GMT+07:00" name="TEST_05" finished-at="2025-04-13T21:41:46 GMT+07:00" duration-ms="3119" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[did not expect [0] but found [0]]]>
+              <![CDATA[Alert không xuất hiện khi tìm kiếm trống.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect [0] but found [0]
+              <![CDATA[java.lang.AssertionError: Alert không xuất hiện khi tìm kiếm trống.
 at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failEquals(Assert.java:1594)
-at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
-at org.testng.Assert.assertNotEquals(Assert.java:2217)
-at org.testng.Assert.assertNotEquals(Assert.java:2239)
-at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:24)
-at TestCase.Search.TEST_05(Search.java:58)
+at Interface.InterfaceSearch.searchProduct(InterfaceSearch.java:40)
+at TestCase.Search.TEST_05(Search.java:56)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TEST_05 -->
-        <test-method is-config="true" signature="tearDownForClass()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-08T22:42:52 GMT+07:00" name="tearDownForClass" finished-at="2025-04-08T22:42:55 GMT+07:00" duration-ms="3101" status="PASS">
+        <test-method is-config="true" signature="tearDownForClass()[pri:0, instance:TestCase.Search@747ddf94]" started-at="2025-04-13T21:41:46 GMT+07:00" name="tearDownForClass" finished-at="2025-04-13T21:41:50 GMT+07:00" duration-ms="3263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownForClass -->

@@ -1,7 +1,5 @@
 package Common;
 
-import com.google.common.cache.AbstractCache.SimpleStatsCounter;
-
 public class Constant {
 	public static String DRIVER_KEY 			= "webdriver.chrome.driver";
 	public static String DRIVER_KEY_LOCATION 	= "D:\\New folder\\chromedriver.exe";
