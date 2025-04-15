@@ -6,6 +6,6 @@ public class Constant {
 
 	public static String URL_TEST				= "https://demowebshop.tricentis.com/login";
 	
-	public static String email ="daothuylinh6823@gmial.com";
+	public static String email ="daothuylinh6823@gmail.com";
 	public static String password = "12345678";
 }

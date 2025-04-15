@@ -3,15 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Check test NG(failed)">
     <classes>
-      <class name="TestCase.Search">
+      <class name="TestCase.update_infor">
         <methods>
-          <include name="TEST_01"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="setUpForClass"/>
-          <include name="tearDownForClass"/>
-          <include name="TEST_05"/>
+          <include name="TEST_01"/>
         </methods>
-      </class> <!-- TestCase.Search -->
+      </class> <!-- TestCase.update_infor -->
     </classes>
   </test> <!-- Check test NG(failed) -->
 </suite> <!-- Failed suite [Suite] -->
