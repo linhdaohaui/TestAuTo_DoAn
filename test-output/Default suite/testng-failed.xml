@@ -6,8 +6,18 @@
       <class name="TestCase.update_infor">
         <methods>
           <include name="tearDown"/>
+          <include name="TEST_13"/>
+          <include name="TEST_02"/>
+          <include name="TEST_10"/>
+          <include name="TEST_11"/>
+          <include name="TEST_05"/>
           <include name="setUp"/>
-          <include name="TEST_01"/>
+          <include name="TEST_07"/>
+          <include name="TEST_06"/>
+          <include name="TEST_8"/>
+          <include name="TEST_03"/>
+          <include name="TEST_04"/>
+          <include name="TEST_09"/>
         </methods>
       </class> <!-- TestCase.update_infor -->
     </classes>

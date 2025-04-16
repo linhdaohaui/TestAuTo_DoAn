@@ -27,8 +27,58 @@ public class update_infor {
 	}
 	
 	@Test
-	public void TEST_01() throws Exception {
-		 InterfaceUpdateInfor.updateInfor(driver, "    Linh", "Dao", Constant.email, "");
+	public void TEST_02() throws Exception {
+		 InterfaceUpdateInfor.updateInfor(driver, "", "Dao", Constant.email,InterfaceUpdateInfor.mess_error_fname_empty);
 	}
+	
+	@Test
+	public void TEST_03() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "123", "Dao", Constant.email, InterfaceUpdateInfor.mess_error_name_val);
+	}
+	@Test
+	public void TEST_04() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "    Linh    ", "Dao", Constant.email, "");
+	}
+	
+	@Test
+	public void TEST_05() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Dao Thi Thuy Linh Dao Thi Thuy Linh Dao Thi Thuy Linh", "Dao", Constant.email, InterfaceUpdateInfor.mess_error_name_val);
+	}
+	
+	
+	@Test
+	public void TEST_06() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Linh", "", Constant.email, InterfaceUpdateInfor.mess_error_lname_empty);
+	}
+	@Test
+	public void TEST_07() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Linh", "123!@#", Constant.email, InterfaceUpdateInfor.mess_error_name_val);
+	}
+	
+	@Test
+	public void TEST_8() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Linh","    Dao    ",Constant.email, "");
+	}
+	
+	@Test
+	public void TEST_09() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Linh", "Dao Thi Thuy Linh Dao Thi Thuy Linh Dao Thi Thuy Linh", Constant.email, InterfaceUpdateInfor.mess_error_name_val);
+	}
+	
+	@Test
+	public void TEST_10() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Linh", "Dao", "", InterfaceUpdateInfor.mess_error_email_empty);
+	}
+	
+	@Test
+	public void TEST_11() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Linh", "Dao", "a", InterfaceUpdateInfor.mess_error_email_val);
+	}
+	
+	@Test
+	public void TEST_13() throws Exception {
+		InterfaceUpdateInfor.updateInfor(driver, "Linh", "Dao", Constant.email, "");
+	}
+
 
 }
