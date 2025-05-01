@@ -2,6 +2,8 @@ package Common;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +11,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 
 public class CommonFunction {
 
@@ -24,6 +29,32 @@ public class CommonFunction {
         driver.get(url); // Mở trang web
         return driver;
     }
+
+    public static void screenShot(ITestResult result) throws IOException {
+        // Tạo tham chiếu của TakesScreenshot với driver hiện tại
+        TakesScreenshot ts = (TakesScreenshot) driver;
+
+        // Gọi hàm capture screenshot - getScreenshotAs
+        File source = ts.getScreenshotAs(OutputType.FILE);
+
+        // Kiểm tra folder tồn tại. Nếu không thì tạo mới folder
+        File theDir = new File("./Screenshots/");
+        if (!theDir.exists()) {
+            theDir.mkdirs();
+        }
+
+        // Lấy tên class và tên method (test case)
+        String className = result.getTestClass().getRealClass().getSimpleName(); // tên class
+        String methodName = result.getName(); // tên method
+
+        // Tạo đường dẫn file với tên class và method
+        String fileName = className + "_" + methodName + ".png";
+
+        // Copy file screenshot
+        FileHandler.copy(source, new File("./Screenshots/" + fileName));
+        System.out.println("Screenshot taken: " + fileName);
+    }
+
 
     public static void shutDownDriver(WebDriver driver) throws InterruptedException {
         driver.close();

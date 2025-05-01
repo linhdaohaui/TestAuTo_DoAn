@@ -6,9 +6,14 @@ import Interface.InterfaceForgotPassword;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
+
 import static org.testng.Assert.assertEquals;
 
 import static org.testng.Assert.assertEquals;
@@ -26,6 +31,10 @@ public class ForgotPassword {
     @AfterTest
     public void tearDown() throws Exception {
         CommonFunction.shutDownDriver(driver);
+    }
+    @AfterMethod
+    public void screenShot(ITestResult result) throws IOException {
+        CommonFunction.screenShot(result);
     }
     //Test 01 mail đã được đăng kí
     @Test
