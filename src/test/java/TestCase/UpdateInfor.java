@@ -11,7 +11,7 @@ import Common.Constant;
 import Interface.InterfaceLogin;
 import Interface.InterfaceUpdateInfor;
 
-public class update_infor {
+public class UpdateInfor {
 
     private static WebDriver driver;
     @BeforeTest

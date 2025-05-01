@@ -9,14 +9,12 @@ import Common.CommonFunction;
 import Common.Constant;
 import Interface.InterfaceLogin;
 
-public class log_in {
+public class Login {
     private static WebDriver driver;
 
     @BeforeTest
     public void setUp() throws Exception {
-        System.out.println("=== Setup started ===");
         driver = CommonFunction.initWebDriver(Constant.URL_TEST);
-        System.out.println("=== Setup finised ===");
     }
 
     @AfterTest

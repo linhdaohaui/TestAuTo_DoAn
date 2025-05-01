@@ -1,5 +1,6 @@
 package TestCase;
 
+import Interface.InterfaceLogout;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -8,7 +9,7 @@ import org.testng.annotations.Test;
 import Common.CommonFunction;
 import Common.Constant;
 
-public class log_out {
+public class Logout {
 
     private static WebDriver driver;
 
@@ -24,8 +25,8 @@ public class log_out {
     }
 
     @Test
-    public void Test_01() {
-
+    public void Test_01() throws Exception {
+        InterfaceLogout.logout(driver);
     }
 
 }
