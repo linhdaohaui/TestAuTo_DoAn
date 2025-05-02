@@ -7,6 +7,7 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -15,6 +16,7 @@ import Common.Constant;
 import Interface.InterfaceLogin;
 
 import java.io.File;
+import java.io.IOException;
 
 public class Login {
     private static WebDriver driver;
@@ -27,6 +29,11 @@ public class Login {
     @AfterTest
     public void tearDown() throws Exception {
         CommonFunction.shutDownDriver(driver);
+    }
+
+    @BeforeMethod
+    public void screenShort(ITestResult result) throws IOException {
+        CommonFunction.screenShot(result);
     }
     @Test (priority = 1)
     public void TEST_02() throws Exception {
@@ -45,12 +52,12 @@ public class Login {
 
     @Test ()
     public void TEST_05() throws Exception {
-        InterfaceLogin.login(driver, ".,@gmail.com", Constant.password, InterfaceLogin.mess_incorrect_password);
+        InterfaceLogin.login(driver, "/,@gmail.com", Constant.password, InterfaceLogin.mess_incorrect_email);
     }
 
     @Test ()
     public void TEST_06() throws Exception {
-        InterfaceLogin.login(driver, "     daothuylinh6823@gmail.com", Constant.password, InterfaceLogin.mess_login_fail);
+        InterfaceLogin.login(driver, "     " + Constant.email + "     ", Constant.password, "");
     }
     @Test ()
     public void TEST_07() throws Exception {

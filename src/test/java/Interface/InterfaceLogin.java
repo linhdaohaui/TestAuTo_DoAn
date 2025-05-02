@@ -32,6 +32,12 @@ public class InterfaceLogin {
         else if (errorMessage == "") {
             driver.findElement(By.xpath("//a[normalize-space()='Log out']")).isDisplayed();
         }
+        else if (!email.contains("@") || !email.contains(".")) {
+            CommonFunction.assertTextValue(driver, error_email, errorMessage);
+        }
+        else if (email.matches(".*[ ,;:\\\\\\[\\]{}()'\"<>=%].*")) {
+            CommonFunction.assertTextValue(driver, error_email, errorMessage);
+        }
         else {
             CommonFunction.assertTextValue(driver, login_fail, errorMessage);
         }
