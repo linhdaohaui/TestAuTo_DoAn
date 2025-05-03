@@ -6,10 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import Common.CommonFunction;
 import Common.Constant;
@@ -31,7 +28,7 @@ public class Login {
         CommonFunction.shutDownDriver(driver);
     }
 
-    @BeforeMethod
+    @AfterMethod
     public void screenShort(ITestResult result) throws IOException {
         CommonFunction.screenShot(result);
     }

@@ -99,4 +99,30 @@ public class CommonFunction {
         List<WebElement> listElements = driver.findElements(By.xpath(elementXpath));
         return listElements.size(); // Tối ưu hơn so với dùng biến đếm
     }
+    public static void checkAlertAndAccept(WebDriver driver, String expectedText) {
+        try {
+            // Đợi vài giây để alert xuất hiện nếu có
+            Thread.sleep(1000);
+
+            // Chuyển sang alert
+            Alert alert = driver.switchTo().alert();
+            String alertText = alert.getText();
+
+            // In và kiểm tra nội dung alert
+            System.out.println("Alert xuất hiện với nội dung: " + alertText);
+            if (!alertText.equals(expectedText)) {
+                throw new AssertionError("Nội dung alert KHÔNG đúng. Mong đợi: [" + expectedText + "], thực tế: [" + alertText + "]");
+            }
+
+            // Đóng alert
+            alert.accept(); // hoặc alert.dismiss() nếu cần
+            System.out.println("Alert đã được accept.");
+
+        } catch (NoAlertPresentException e) {
+            System.out.println("Không có alert xuất hiện.");
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.out.println("Thread bị gián đoạn.");
+        }
+    }
 }
