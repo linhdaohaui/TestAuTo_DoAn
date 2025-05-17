@@ -1,0 +1,12 @@
+<suite name="Test report">
+    <test name="Log out">
+        <classes>
+            <class name="TestCase.Logout"/>
+        </classes>
+    </test>
+    <test name="Log in">
+        <classes>
+            <class name="TestCase.Login"/>
+        </classes>
+    </test>
+</suite>

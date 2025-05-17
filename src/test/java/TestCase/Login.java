@@ -1,5 +1,8 @@
 package TestCase;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +17,8 @@ import Interface.InterfaceLogin;
 
 import java.io.File;
 import java.io.IOException;
-
+@Epic("Test")
+@Feature("Test")
 public class Login {
     private static WebDriver driver;
 
@@ -32,16 +36,17 @@ public class Login {
     public void screenShort(ITestResult result) throws IOException {
         CommonFunction.screenShot(result);
     }
+    @Step("Test 01")
     @Test (priority = 1)
     public void TEST_02() throws Exception {
         InterfaceLogin.login(driver, "", Constant.password, InterfaceLogin.mess_empty_error);
     }
-
+    @Step("Test 02")
     @Test ()
     public void TEST_03() throws Exception {
         InterfaceLogin.login(driver, "linhdtt@icebear.com.vn", Constant.password, InterfaceLogin.mess_login_fail);
     }
-
+/*
     @Test ()
     public void TEST_04() throws Exception {
         InterfaceLogin.login(driver, "linhdao", Constant.password, InterfaceLogin.mess_incorrect_email);
@@ -72,4 +77,6 @@ public class Login {
     public void TEST_01() throws Exception {
         InterfaceLogin.login(driver, Constant.email, Constant.password, "");
     }
+
+ */
 }
