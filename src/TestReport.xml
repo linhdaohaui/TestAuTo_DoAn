@@ -9,4 +9,19 @@
             <class name="TestCase.Login"/>
         </classes>
     </test>
+    <test name="Search">
+        <classes>
+            <class name="TestCase.Search"/>
+        </classes>
+    </test>
+    <test name="Register">
+        <classes>
+            <class name="TestCase.Register"/>
+        </classes>
+    </test>
+    <test name="Forgot Password">
+        <classes>
+            <class name="TestCase.ForgotPassword"/>
+        </classes>
+    </test>
 </suite>

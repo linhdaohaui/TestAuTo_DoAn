@@ -3,6 +3,7 @@ package TestCase;
 import Common.CommonFunction;
 import Common.Constant;
 import Interface.InterfaceForgotPassword;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,24 +39,24 @@ public class ForgotPassword {
     }
     //Test 01 mail đã được đăng kí
     @Test
+    @Step("ForgotPassWord_01")
     public void Test_01() throws Exception {
         InterfaceForgotPassword.forgotFass(driver , Constant.email, InterfaceForgotPassword.mess_success);
     }
     // Test 02 mail chưa được đăng kí
+    @Step("ForgotPassWord_02")
     @Test
     public void Test_02() throws Exception {
         InterfaceForgotPassword.forgotFass(driver, "mcajsgfvhasg@gmil.com", InterfaceForgotPassword.messs_error_find);
     }
-
-
     //Test 03 Kiểm tra trường mail rỗng
-
+    @Step("ForgotPassWord_03")
     @Test
     public void Test_03() throws Exception {
         InterfaceForgotPassword.forgotFass(driver, "", InterfaceForgotPassword.mess_error_email_empty);
     }
-
     //Test 04 Kiểm tra email không đúng dịnh dạng
+    @Step("ForgotPassWord_04")
     @Test
     public void Test_04() throws Exception {
         InterfaceForgotPassword.forgotFass(driver, "linh", InterfaceForgotPassword.mess_error_email_val);
@@ -65,7 +66,5 @@ public class ForgotPassword {
     public void Test_05() throws Exception {
         InterfaceForgotPassword.forgotFass(driver, "   " + Constant.email + "   ", InterfaceForgotPassword.mess_success);
     }
-
-
 
 }

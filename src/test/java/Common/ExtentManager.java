@@ -33,10 +33,10 @@ public class ExtentManager {
     }
 
     //Text attachments for Allure
-    @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshotPNG(WebDriver driver) {
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-    }
+//    @Attachment(value = "Page screenshot", type = "image/png")
+//    public byte[] saveScreenshotPNG(WebDriver driver) {
+//        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//    }
 
 //    @Override
 //    public void onStart(ITestContext iTestContext) {
