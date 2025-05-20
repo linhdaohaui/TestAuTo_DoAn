@@ -4,6 +4,7 @@ import Common.CommonFunction;
 import Common.Constant;
 import Interface.InterfaceLogin;
 import Interface.InterfacePurchase;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -36,13 +37,15 @@ public class PurchaseSuccess {
     public void screenShot(ITestResult result) throws IOException {
         CommonFunction.screenShot(result);
     }
+//    @Step("Purchase_Test03")
+//    @Test
+//    public void Test03(){
+//        driver.findElement(By.xpath(InterfacePurchase.xpath_btn_billingAd)).click();
+//        driver.findElement(By.xpath(InterfacePurchase.xpath_acc)).isDisplayed();
+//    }
+    @Step("Purchase_Test03")
     @Test
     public void Test03(){
-        driver.findElement(By.xpath(InterfacePurchase.xpath_btn_billingAd)).click();
-        driver.findElement(By.xpath(InterfacePurchase.xpath_acc)).isDisplayed();
-    }
-    @Test
-    public void Test04(){
         driver.findElement(By.xpath(InterfacePurchase.xpath_btn_billingAd)).click();
         driver.findElement(By.xpath(InterfacePurchase.xpath_btn_shipAd)).click();
         driver.findElement(By.xpath(InterfacePurchase.xpath_btn_shipMed)).click();

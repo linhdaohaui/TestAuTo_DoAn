@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import Common.CommonFunction;
+import org.openqa.selenium.WebElement;
 
 public class InterfaceUpdateInfor {
     public static String xpath_radio_gender_male = "//input[@id='gender-male']";
@@ -28,15 +29,24 @@ public class InterfaceUpdateInfor {
     public static String mess_error_email_empty = "Email is required.";
     public static String mess_error_email_val ="Wrong email";
     public static String mess_error_name_val ="Wrong name";
-
-
-    //test 01, test 12 chưa check
-    public static void updateInfor(WebDriver driver, String fname, String lname, String email, String errorMessage) throws Exception {
+    public static void Input(WebDriver driver, String fname, String lname, String email) throws Exception{
         CommonFunction.sendKeys(driver, xpath_txt_fname, fname);
         CommonFunction.sendKeys(driver, xpath_txt_lname, lname);
         CommonFunction.sendKeys(driver, xpath_txt_email, email);
         CommonFunction.clickItem(driver, xpath_button_save);
+    }
 
+    public static void CheckDisplay(WebDriver driver, String fname, String lname, String email) throws Exception {
+        CommonFunction.clickItem(driver,xpath_radio_female);
+        Input(driver, fname, lname, email);
+        WebElement check = driver.findElement(By.xpath(xpath_radio_female));
+        if(check.isDisplayed()) return;
+        else{
+            throw new Exception("Element with xpath_radio_female is not displayed.");
+        }
+    }
+    public static void updateInfor(WebDriver driver, String fname, String lname, String email, String errorMessage) throws Exception {
+        Input(driver, fname, lname, email);
         boolean hasError = false;
 
         if (fname.trim().isEmpty()) {

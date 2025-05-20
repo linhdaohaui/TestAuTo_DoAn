@@ -24,4 +24,29 @@
             <class name="TestCase.ForgotPassword"/>
         </classes>
     </test>
+
+    <test name="AddToCartTest">
+        <classes>
+            <class name="TestCase.AddToCart"/>
+        </classes>
+    </test>
+
+    <test name="RemoveFromCartTest">
+        <classes>
+            <class name="TestCase.removeFromCart"/>
+        </classes>
+    </test>
+    <test name="Update Information">
+        <classes>
+            <class name="TestCase.UpdateInfor"/>
+        </classes>
+    </test>
+    <test name="Purchase">
+        <classes>
+            <class name ="TestCase.PurchaseSuccess"/>
+            <class name="TestCase.Purchase"/>
+        </classes>
+    </test>
 </suite>
+
+

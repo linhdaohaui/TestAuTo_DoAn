@@ -4,6 +4,7 @@ import Common.CommonFunction;
 import Common.Constant;
 import Interface.InterfacePurchase;
 import Interface.InterfaceRegister;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,13 +35,14 @@ public class Purchase {
     public void screenShot(ITestResult result) throws IOException {
         CommonFunction.screenShot(result);
     }
-
+    @Step("Purchase_Test01")
     @Test
     public void Test_01() throws Exception {
         CommonFunction.clickItem(driver, InterfacePurchase.xpath_btn_purchase);
         driver.findElement(By.xpath(InterfacePurchase.xpath_dialog_term)).isDisplayed();
     }
-    @Test
+    @Step("Purchase_Test02")
+    @Test(dependsOnMethods = "Test_01")
     public void Test02() throws Exception {
         CommonFunction.clickItem(driver, InterfacePurchase.xpath_btn_termOfService);
         CommonFunction.clickItem(driver, InterfacePurchase.xpath_btn_purchase);

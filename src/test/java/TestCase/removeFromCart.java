@@ -4,6 +4,7 @@ import Common.CommonFunction;
 import Common.Constant;
 import Interface.InterfaceLogin;
 import Interface.InterfaceManagerCart;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,11 +30,13 @@ public class removeFromCart {
         CommonFunction.screenShot(result);
     }
      */
-    @Test()
+    @Step("RemoveFromCart_Test01")
+    @Test
     public void Test01() throws Exception {
         InterfaceManagerCart.removeItemByIndex(driver, 0);
     }
-    @Test()
+    @Step("RemoveFromCart_Test02")
+    @Test(dependsOnMethods = "Test01")
     public void Test02() throws Exception {
         InterfaceManagerCart.removeAllItemsFromCart(driver);
     }
