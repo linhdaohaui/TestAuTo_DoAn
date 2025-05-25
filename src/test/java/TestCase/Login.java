@@ -17,8 +17,6 @@ import Interface.InterfaceLogin;
 
 import java.io.File;
 import java.io.IOException;
-@Epic("Test")
-@Feature("Test")
 public class Login {
     private static WebDriver driver;
 
